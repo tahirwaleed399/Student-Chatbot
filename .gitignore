@@ -1,0 +1,59 @@
+# Ignore node_modules for Next.js
+/frontend/node_modules
+
+# Ignore build outputs for Next.js
+/frontend/.next
+/frontend/out
+
+# Ignore log files for Next.js
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+
+# Ignore environment variable files for Next.js
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+# Ignore Next.js cache files
+/frontend/.next/cache
+
+# Ignore Flask virtual environment
+/backend/venv
+
+# Ignore Python bytecode files
+/backend/__pycache__/
+/backend/*.py[cod]
+/backend/*.egg
+/backend/*.egg-info
+/backend/dist
+/backend/build
+
+# Ignore log files and other system files for Flask
+/backend/instance
+/backend/*.log
+/backend/.env
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore node_modules in the root (if any)
+node_modules
+
+# Ignore any log files in the root
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore any environment variable files in the root
+.env
