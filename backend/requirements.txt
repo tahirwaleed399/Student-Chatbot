@@ -1,0 +1,6 @@
+flask
+langchain
+firebase-admin
+faiss-cpu
+sentence-transformers
+google-generativeai

@@ -1,10 +1,18 @@
 from flask import Flask
+from flask_cors import CORS
+from routes import chat, sentiment
+from config import config
 
-app = Flask(__name__)
+def create_app(config_name='default'):
+    app = Flask(__name__)
+    app.config.from_object(config[config_name])
+    CORS(app)
 
-@app.route('/')
-def hello_world():
-    return 'Hello, World!'
+    app.register_blueprint(chat.bp)
+    app.register_blueprint(sentiment.bp)
+
+    return app
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app = create_app()
+    app.run()
