@@ -57,3 +57,6 @@ yarn-error.log*
 
 # Ignore any environment variable files in the root
 .env
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
